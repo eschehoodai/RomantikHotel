@@ -651,6 +651,11 @@ textarea.form-control:focus {
   .nav-links.open a {
     font-size: var(--title-lg);
     padding: 1rem 0;
+    color: var(--on-surface-variant);
+  }
+  .nav-links.open a:hover,
+  .nav-links.open a.active {
+    color: var(--primary);
   }
 
   .split, .split-offset { grid-template-columns: 1fr; }
