@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant mit Kaminzimmer – Romantik Hotel Lindengarten</title>
+  <meta name="description" content="Heimische Spezialitäten im historischen Kaminzimmer und Blockstube – Schweinelendenbraten, Ochsenbäckchen, Zanderfilet und mehr.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav-wrap">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Romantik Hotel <span>Lindengarten</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="romantik-hotel.html">Romantik-Hotel</a></li>
+        <li><a href="bauernhaus.html">Bauernhaus</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="arrangements.html">Arrangements</a></li>
+        <li><a href="umgebung.html">Umgebung</a></li>
+        <li><a href="buchung.html">Buchung</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero-sub">
+    <div class="hero-bg" style="background-image:url('bilder/restaurant-kaminzimmer.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="overline">Kulinarik</p>
+      <h1>Unser Restaurant mit Kaminzimmer</h1>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="split split-offset reveal">
+        <div class="split-text">
+          <p class="overline">Gastlichkeit genießen</p>
+          <h2>Heimische Spezialitäten &amp; mehr</h2>
+          <p>Genießen Sie unser umfangreiches Angebot an heimischen Spezialitäten in unserem Restaurant mit Kaminzimmer und historischer Blockstube. Die Auswahl reicht von gutbürgerlicher Hausmannskost wie Schweinelendenbraten und Rinderrouladen bis hin zu Spezialitäten wie marinierte Ochsenbäckchen und Zanderfilet.</p>
+          <p>Wir haben für Sie täglich geöffnet, um Sie kulinarisch zu verwöhnen. Natürlich stehen Ihnen unsere Gasträume auch gern für Feiern zur Verfügung. Für Sie und Ihre Gäste bereiten wir gern ein 3-Gänge-Menü oder ein schmackhaftes Buffet zu für 40 Personen.</p>
+          <p>Erleben Sie Gastlichkeit in romantischer und persönlicher Atmosphäre in unseren original denkmalgeschützten Umgebindehaus.</p>
+        </div>
+        <div class="split-img">
+          <img src="bilder/restaurant-feier.jpg" alt="Restaurant Feier" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖFFNUNGSZEITEN -->
+  <section class="section section-alt">
+    <div class="container-narrow">
+      <div class="reveal" style="text-align:center;">
+        <p class="overline">Besuchen Sie uns</p>
+        <h2 style="font-size:var(--display-md);margin-top:.5rem;margin-bottom:2rem;">Öffnungszeiten</h2>
+      </div>
+      <div class="reveal" style="max-width:480px;margin:0 auto;">
+        <table class="hours-table">
+          <tr><td>Montag – Freitag</td><td>ab 15:00 Uhr</td></tr>
+          <tr><td>Samstag, Sonntag &amp; Feiertag</td><td>ab 12:00 Uhr</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="overline">Impressionen</p>
+        <h2>Einblicke in unser Restaurant</h2>
+      </div>
+      <div class="gallery reveal">
+        <div class="gallery-item">
+          <img src="bilder/restaurant-biergarten.jpg" alt="Biergarten" loading="lazy">
+          <div class="gallery-overlay"><span>Biergarten</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="bilder/restaurant-feier.jpg" alt="Feier" loading="lazy">
+          <div class="gallery-overlay"><span>Feiern</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="bilder/restaurant-kaminzimmer.jpg" alt="Kaminzimmer" loading="lazy">
+          <div class="gallery-overlay"><span>Kaminzimmer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner" style="background-image:url('bilder/romantik_hotel_kamin-teller.jpg')">
+    <div class="container">
+      <p class="overline" style="color:var(--primary-container)">Reservierung</p>
+      <h2>Tisch reservieren</h2>
+      <p>Rufen Sie uns an oder nutzen Sie unser Kontaktformular für Ihre Tischreservierung.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="kontakt.html" class="btn btn-primary">Kontakt aufnehmen</a>
+        <a href="tel:03584470654" class="btn btn-secondary" style="color:#fff;border-color:rgba(255,255,255,.35);">035844 70654</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Schließen">&times;</button>
+    <button class="lightbox-prev" aria-label="Vorheriges Bild">&#8249;</button>
+    <button class="lightbox-next" aria-label="Nächstes Bild">&#8250;</button>
+    <img id="lb-img" src="" alt="Vollbild">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Romantik Hotel Zum Lindengarten</h4>
+          <p>Großschönauer Straße 21<br>02796 Jonsdorf Luftkurort</p>
+          <p style="margin-top:.75rem;">Telefon: 035844 70654<br>Fax: 035844 70611<br>E-Mail: <a href="mailto:buchung@romantikhaeuser.de">buchung@romantikhaeuser.de</a></p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="romantik-hotel.html">Romantik-Hotel</a></li>
+            <li><a href="bauernhaus.html">Bauernhaus</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="arrangements.html">Arrangements</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Service</h4>
+          <ul>
+            <li><a href="umgebung.html">Umgebung</a></li>
+            <li><a href="buchung.html">Buchung</a></li>
+            <li><a href="https://www.yovite.com/Restaurant-Gutschein-R-84114902.html?REF=REST" target="_blank" rel="noopener">Gutscheine</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Lindengarten Kunath GmbH</span>
+        <div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

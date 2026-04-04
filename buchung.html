@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buchung – Romantik Hotel Zum Lindengarten</title>
+  <meta name="description" content="Buchen Sie Ihren Aufenthalt im Romantik Hotel Zum Lindengarten in Jonsdorf – online oder per Anfrage.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav-wrap">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Romantik Hotel <span>Lindengarten</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="romantik-hotel.html">Romantik-Hotel</a></li>
+        <li><a href="bauernhaus.html">Bauernhaus</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="arrangements.html">Arrangements</a></li>
+        <li><a href="umgebung.html">Umgebung</a></li>
+        <li><a href="buchung.html">Buchung</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero-sub">
+    <div class="hero-bg" style="background-image:url('bilder/hotelseite_2.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="overline">Reservierung</p>
+      <h1>Buchung &amp; Anfrage</h1>
+    </div>
+  </section>
+
+  <!-- BUCHUNGSANFRAGE -->
+  <section class="section">
+    <div class="container-narrow">
+      <div class="reveal" style="text-align:center;margin-bottom:3rem;">
+        <p class="overline">Ihren Aufenthalt planen</p>
+        <h2 style="font-size:var(--display-md);margin-top:.5rem;">Buchungsanfrage</h2>
+        <p style="color:var(--on-surface-variant);margin-top:1rem;">Füllen Sie das Formular aus und wir melden uns umgehend bei Ihnen<br>mit Verfügbarkeit und Bestätigung.</p>
+      </div>
+
+      <div class="reveal" style="background:var(--surface-container-lowest);border-radius:.5rem;padding:clamp(2rem,4vw,3rem);box-shadow:var(--shadow-ambient);">
+        <form action="mailto:buchung@romantikhaeuser.de" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="anreise">Anreise</label>
+              <input type="date" id="anreise" name="anreise" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="abreise">Abreise</label>
+              <input type="date" id="abreise" name="abreise" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="erwachsene">Anzahl Erwachsene</label>
+              <input type="number" id="erwachsene" name="erwachsene" class="form-control" min="1" value="2">
+            </div>
+            <div class="form-group">
+              <label for="kinder">Anzahl Kinder</label>
+              <input type="number" id="kinder" name="kinder" class="form-control" min="0" value="0">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Nachricht / Wünsche</label>
+            <textarea id="nachricht" name="nachricht" class="form-control" rows="5"></textarea>
+          </div>
+          <div style="text-align:center;margin-top:1rem;">
+            <button type="submit" class="btn btn-primary">Anfrage senden</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT-INFO -->
+  <section class="section section-alt">
+    <div class="container-narrow">
+      <div class="reveal" style="text-align:center;">
+        <p class="overline">Oder direkt</p>
+        <h2 style="font-size:var(--headline-lg);margin-top:.5rem;margin-bottom:1.5rem;">Telefonisch buchen</h2>
+        <p style="color:var(--on-surface-variant);margin-bottom:1.5rem;">Wir beraten Sie gern persönlich zu verfügbaren Zimmern, Arrangements und Preisen.</p>
+        <a href="tel:03584470654" class="btn btn-primary" style="font-size:var(--title-md);">035844 70654</a>
+        <p style="margin-top:1rem;font-size:var(--body-sm);color:var(--on-surface-variant);">E-Mail: <a href="mailto:buchung@romantikhaeuser.de">buchung@romantikhaeuser.de</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Romantik Hotel Zum Lindengarten</h4>
+          <p>Großschönauer Straße 21<br>02796 Jonsdorf Luftkurort</p>
+          <p style="margin-top:.75rem;">Telefon: 035844 70654<br>Fax: 035844 70611<br>E-Mail: <a href="mailto:buchung@romantikhaeuser.de">buchung@romantikhaeuser.de</a></p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="romantik-hotel.html">Romantik-Hotel</a></li>
+            <li><a href="bauernhaus.html">Bauernhaus</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="arrangements.html">Arrangements</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Service</h4>
+          <ul>
+            <li><a href="umgebung.html">Umgebung</a></li>
+            <li><a href="buchung.html">Buchung</a></li>
+            <li><a href="https://www.yovite.com/Restaurant-Gutschein-R-84114902.html?REF=REST" target="_blank" rel="noopener">Gutscheine</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Lindengarten Kunath GmbH</span>
+        <div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
