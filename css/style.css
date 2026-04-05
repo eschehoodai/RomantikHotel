@@ -163,7 +163,7 @@ h1,h2,h3,h4 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2
 .nav-links a.active::after { width: 100%; }
 
 /* Hamburger */
-.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: .5rem; flex-shrink: 0; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: .5rem; flex-shrink: 0; position: relative; z-index: 1001; }
 .nav-toggle span {
   display: block; width: 24px; height: 2px;
   background: #ffffff;
@@ -652,6 +652,16 @@ textarea.form-control:focus {
     gap: 0;
     box-shadow: var(--shadow-elevated);
     z-index: 999;
+  }
+  .nav-overlay {
+    display: none;
+  }
+  .nav-overlay.open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 998;
   }
   .nav-links.open a {
     font-size: var(--title-lg);
