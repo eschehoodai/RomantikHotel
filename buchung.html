@@ -37,12 +37,33 @@
     </div>
   </section>
 
-  <!-- BUCHUNGSANFRAGE -->
+  <!-- DIRS21 BUCHUNGSWIDGET -->
   <section class="section">
     <div class="container-narrow">
+      <div class="reveal" style="text-align:center;margin-bottom:2rem;">
+        <p class="overline">Direkt online buchen</p>
+        <h2 style="font-size:var(--display-md);margin-top:.5rem;">Buchungsformular</h2>
+        <p style="color:var(--on-surface-variant);margin-top:1rem;">Wählen Sie Ihren Wunschtermin und buchen Sie bequem online.</p>
+      </div>
+      <div class="reveal" style="display:flex;justify-content:center;">
+        <div style="position:relative;padding:1.5rem;">
+          <!-- Dekorative Eck-Ornamente -->
+          <div style="position:absolute;top:0;left:0;width:28px;height:28px;border-top:2px solid var(--primary-container);border-left:2px solid var(--primary-container);border-radius:2px 0 0 0;"></div>
+          <div style="position:absolute;top:0;right:0;width:28px;height:28px;border-top:2px solid var(--primary-container);border-right:2px solid var(--primary-container);border-radius:0 2px 0 0;"></div>
+          <div style="position:absolute;bottom:0;left:0;width:28px;height:28px;border-bottom:2px solid var(--primary-container);border-left:2px solid var(--primary-container);border-radius:0 0 0 2px;"></div>
+          <div style="position:absolute;bottom:0;right:0;width:28px;height:28px;border-bottom:2px solid var(--primary-container);border-right:2px solid var(--primary-container);border-radius:0 0 2px 0;"></div>
+          <div id="d21-quickbook"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUCHUNGSANFRAGE -->
+  <section class="section section-alt">
+    <div class="container-narrow">
       <div class="reveal" style="text-align:center;margin-bottom:3rem;">
-        <p class="overline">Ihren Aufenthalt planen</p>
-        <h2 style="font-size:var(--display-md);margin-top:.5rem;">Buchungsanfrage</h2>
+        <p class="overline">Alternativ</p>
+        <h2 style="font-size:var(--display-md);margin-top:.5rem;">Allgemeine Buchungsanfrage</h2>
         <p style="color:var(--on-surface-variant);margin-top:1rem;">Füllen Sie das Formular aus und wir melden uns umgehend bei Ihnen<br>mit Verfügbarkeit und Bestätigung.</p>
       </div>
 
@@ -144,5 +165,8 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- DIRS21 JavaScript SDK -->
+  <script src="https://js-sdk.dirs21.de/7c9366f5-d53f-469f-a694-64492ca05e97" type="text/javascript" async="async"></script>
 </body>
 </html>
