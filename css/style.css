@@ -671,3 +671,61 @@ textarea.form-control:focus {
   .gallery { grid-template-columns: 1fr 1fr; }
   .features-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   TESTWEISE – Laufschrift-Banner & Schneeeffekt
+   (kann komplett entfernt werden)
+   ============================================================ */
+
+/* --- Marquee Banner --- */
+.marquee-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: linear-gradient(90deg, #8b0000, #b8860b, #8b0000);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: .65rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 -2px 12px rgba(0,0,0,.3);
+}
+.marquee-track {
+  display: inline-flex;
+  animation: marquee-scroll 22s linear infinite;
+}
+.marquee-track span {
+  flex-shrink: 0;
+  padding-right: 3rem;
+}
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* --- TESTWEISE: Osterhase Animation --- */
+.marquee-bunny {
+  display: inline-block;
+  font-size: 1.6rem;
+  animation: bunny-hop .5s ease-in-out infinite;
+  vertical-align: middle;
+}
+@keyframes bunny-hop {
+  0%, 100% { transform: translateY(0) scaleX(-1); }
+  50%      { transform: translateY(-.35rem) scaleX(-1); }
+}
+
+/* --- Schnee Canvas --- */
+#snow-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  pointer-events: none;
+}
