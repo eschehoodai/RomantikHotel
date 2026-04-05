@@ -127,6 +127,9 @@ h1,h2,h3,h4 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2
   white-space: nowrap;
   transition: color var(--duration) var(--ease-elegant);
   margin-right: 2.5rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .nav-logo span { color: var(--primary-container); transition: color var(--duration) var(--ease-elegant); }
 .nav-wrap.scrolled .nav-logo { color: var(--on-background); }
@@ -160,7 +163,7 @@ h1,h2,h3,h4 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2
 .nav-links a.active::after { width: 100%; }
 
 /* Hamburger */
-.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: .5rem; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: .5rem; flex-shrink: 0; }
 .nav-toggle span {
   display: block; width: 24px; height: 2px;
   background: #ffffff;
@@ -635,6 +638,8 @@ textarea.form-control:focus {
 @media (max-width: 1024px) {
   .nav-links  { display: none; }
   .nav-toggle { display: block; }
+  .nav-inner  { padding: 1rem clamp(1rem, 3vw, 2.5rem); }
+  .nav-logo   { font-size: clamp(1rem, 3.5vw, 1.35rem); margin-right: 1rem; }
 
   .nav-links.open {
     display: flex; flex-direction: column;
